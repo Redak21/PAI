@@ -1,6 +1,26 @@
 <script type="text/javascript">
 
-  document.write("<pre>");
+ // document.write("<pre>");
+ // var szerokosc = parseInt(prompt("Wprowadź szerokość prostokąta:"))
+ // var wysokosc = parseInt(prompt("Podaj wysokość prostokąta:"))
+ // for (i = 1; i <=szerokosc; ++i){
+  //for (j = 1; j <=wysokosc; ++j)
+ // {
+ //     document.write("*");
+//  }document.write("<br>")}
+// document.write("</pre>");
+  
+  if (confirm("Jeśli chcesz wyświetlić prostokąt z gwiazdek, kliknij Ok, jeżeli wciśniesz Anuluj, odstaniesz linie poziomą z gwiazdek")) 
+  {
+   prostokat(szerokosc,wysokosc)
+    alert("Wybrano opcję: OK");
+  } else {
+
+     alert("Wybrano opcję: Anuluj");
+        } 
+  function prostokat(szerokosc,wysokosc)
+  {
+    document.write("<pre>");
   var szerokosc = parseInt(prompt("Wprowadź szerokość prostokąta:"))
   var wysokosc = parseInt(prompt("Podaj wysokość prostokąta:"))
   for (i = 1; i <=szerokosc; ++i){
@@ -8,6 +28,19 @@
   {
       document.write("*");
   }document.write("<br>")}
-  document.write("</pre>");
+ document.write("</pre>");
+  }
+
+  function linia()
+  {
+    document.write("<pre>");
+  var szerokosc = parseInt(prompt("Wprowadź szerokość prostokąta:"))
+  var wysokosc = parseInt(prompt("Podaj wysokość prostokąta:"))
+  for (i = 1; i <=szerokosc; ++i)
+  for (j = 1; j <=wysokosc; ++j)
+  {
+      document.write("*");
+  }
+  }
   </script>
   
